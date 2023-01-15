@@ -1,7 +1,7 @@
 :root {
   --font-size: 17px;
   --btn-color: rgb(169, 78, 53);
-  --btn-font-color: white;
+  --btn-font-color: rgb(255, 255, 255);
   --btn-font-size: 1em;
   --product-title: 20px;
 }
@@ -70,6 +70,6 @@ h5 {
     text-align: center;
 }
 .order{
-  background-color: rgb(68, 117, 19);
+  background-color: rgb(31, 65, 201);
 }
 }
