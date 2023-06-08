@@ -6,13 +6,94 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid</title>
-  <link rel="stylesheet" href="style/style.css">
+  <style>
+    :root {
+      --font-size: 17px;
+      --btn-color: rgb(169, 78, 53);
+      --btn-font-color: rgb(255, 255, 255);
+      --btn-font-size: 1em;
+      --product-title: 20px;
+    }
+
+    .product-section {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px 10px;
+      grid-auto-rows: repeat(5, 1fr);
+
+    }
+
+    .product-image {
+      width: 200px;
+    }
+
+    .product {
+      border: 2px solid rgb(9, 1, 1);
+      border-radius: 5px;
+      padding: 30px;
+      text-align: center;
+      max-width: 200px;
+      max-height: 450px;
+
+    }
+
+    .product-description {
+      font-size: var(--font-size);
+      text-align: justify;
+    }
+
+    .order {
+      background-color: var(--btn-color);
+      color: var(--btn-font-color);
+      border: 0;
+      padding: 10px;
+      border-radius: 7px;
+      font-size: var(--btn-font-size);
+    }
+
+    h5 {
+      font-size: var(--product-title);
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    @media screen and (max-width: 500px) {
+      .product-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .product-image {
+        width: 100px;
+      }
+
+      .product {
+        border: 2px solid rgb(9, 1, 1);
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        max-width: 150px;
+        max-height: 400px;
+      }
+
+      .product-description {
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .order {
+        background-color: rgb(31, 65, 201);
+      }
+    }
+  </style>
 </head>
 
 <body>
   <section class="product-section">
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image"
+        src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png"
+        alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -20,7 +101,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -28,7 +109,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -36,7 +117,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -44,7 +125,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -52,7 +133,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -60,7 +141,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -68,7 +149,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -76,7 +157,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -84,7 +165,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -92,7 +173,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -100,7 +181,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
@@ -108,7 +189,7 @@
       <button class="order">Order Now</button>
     </div>
     <div class="product">
-      <img class="product-image" src="images/camera.jpg" alt="">
+      <img class="product-image" src="https://asia.canon/media/image/2020/07/08/f2dd7cc3f2a84967a9815672213d42a9_R6_FrontSlantLeft_RF24-105mmF4LISUSM.png" alt="">
       <h5 class="product-name">Camera</h5>
       <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ipsum ad quo,
         aliquam optio non?</p>
